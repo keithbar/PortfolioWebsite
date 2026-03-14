@@ -102,12 +102,12 @@
           <div class="project-num">PROJECT_01</div>
           <h3 class="project-title">XM Scrobbler</h3>
           <p class="project-desc">
-            A web app that bridges satellite radio and Last.fm, letting users scrobble tracks in real time when using physical devices that have no native scrobbling support. A Node.js server polls a public satellite radio API for currently playing tracks, then handles OAuth authentication with the Last.fm API to scrobble it on the user's behalf. Demo deployed live on Oracle Cloud.
+            A full-stack web app that bridges satellite radio and Last.fm, letting users scrobble tracks in real time when using physical devices that have no native scrobbling support. A Node.js and Express backend handles authentication with Last.fm, polls a public API for currently playing tracks, and submits them to the user's profile. Sessions persist server-side so scrobbling is never interrupted by browser or device changes. Demo deployed live on Oracle Cloud.
           </p>
           <div class="project-tags">
             <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
             <span class="tag">JavaScript</span>
-            <span class="tag purple">Last.fm API</span>
             <span class="tag purple">OAuth</span>
             <span class="tag green">Oracle Cloud</span>
           </div>
@@ -129,12 +129,13 @@
           <div class="project-num">PROJECT_02</div>
           <h3 class="project-title">Bark Detector</h3>
           <p class="project-desc">
-            An AI-powered local tool that listens to your microphone and uses Google's YAMNet model to detect dog barking in real time. Inspired by a particularly noisy neighbour, it logs the time and duration of every barking session and surfaces the data through a dashboard of visualisations, showing patterns by time of day, day of week, and month.
+            An AI-powered bark detection and analytics tool built with Python and Flask. It listens to your microphone, runs real-time audio classification using Google's YAMNet model via TensorFlow Lite, and logs every barking session with its timestamp and duration. A local web dashboard built with Chart.js visualizes the data, showing patterns by time of day, day of week, and month. Lightweight enough to run on a Raspberry Pi. Inspired by a particularly noisy neighbor.
           </p>
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag purple">YAMNet / TensorFlow</span>
+            <span class="tag purple">Flask</span>
             <span class="tag purple">ML Inference</span>
+            <span class="tag purple">Chart.js</span>
             <span class="tag green">Data Visualization</span>
           </div>
         </div>
